@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+		<id>Package</id>
+		<version>0.0.0</version>
+		<authors>catwalkagogo</authors>
+		<owners>catwalkagogo</owners>
+		<licenseUrl></licenseUrl>
+		<projectUrl>https://github.com/catwalkagogo/CW.Core</projectUrl>
+		<iconUrl></iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Std classes</description>
+		<releaseNotes></releaseNotes>
+		<copyright>Copyright 2014</copyright>
+		<tags></tags>
+		<dependencies>
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="./CW.Core/bin/Release/*.dll" target="lib" />
+		<file src="./CW.Core/bin/Release/*.pdb" target="lib" />
+	</files>
+</package>

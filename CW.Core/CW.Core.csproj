@@ -52,7 +52,6 @@
     <Compile Include="ResetLazy.cs" />
     <Compile Include="WeakDelegate.cs" />
     <Compile Include="WeakMulticastDelegate.cs" />
-    <Compile Include="WeakReference.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

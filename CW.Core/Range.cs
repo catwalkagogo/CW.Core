@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 
 namespace CatWalk{
-	[Serializable]
 	public struct Range<T> : IEquatable<Range<T>>{
 		private T lowerBound;
 		private T upperBound;

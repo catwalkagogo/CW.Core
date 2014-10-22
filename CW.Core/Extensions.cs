@@ -123,7 +123,7 @@ namespace CatWalk {
 		#region Assembly
 
 		public static string GetInformationalVersion(this Assembly asm) {
-			var ver = asm.GetCustomAttributes(true).OfType<AssemblyInformationalVersionAttribute>().FirstOrDefault();
+			var ver = asm.GetCustomAttributes().OfType<AssemblyInformationalVersionAttribute>().FirstOrDefault();
 			return (ver != null) ? ver.InformationalVersion : null;
 		}
 
@@ -132,12 +132,12 @@ namespace CatWalk {
 		}
 
 		public static string GetCopyright(this Assembly asm) {
-			var copy = asm.GetCustomAttributes(true).OfType<AssemblyCopyrightAttribute>().FirstOrDefault();
+			var copy = asm.GetCustomAttributes().OfType<AssemblyCopyrightAttribute>().FirstOrDefault();
 			return (copy != null) ? copy.Copyright : null;
 		}
 
 		public static string GetDescription(this Assembly asm) {
-			var dscr = asm.GetCustomAttributes(true).OfType<AssemblyDescriptionAttribute>().FirstOrDefault();
+			var dscr = asm.GetCustomAttributes().OfType<AssemblyDescriptionAttribute>().FirstOrDefault();
 			return (dscr != null) ? dscr.Description : null;
 		}
 
@@ -153,14 +153,14 @@ namespace CatWalk {
 			return String.IsNullOrWhiteSpace(str);
 		}
 
+		/*
 		public static bool IsMatchWildCard(this string str, string mask) {
 			return PathMatchSpec(str, mask);
 		}
-
 		[DllImport("shlwapi.dll", EntryPoint = "PathMatchSpec", CharSet = CharSet.Auto)]
 		[return: MarshalAs(UnmanagedType.Bool)]
 		internal static extern bool PathMatchSpec([MarshalAs(UnmanagedType.LPTStr)] string path, [MarshalAs(UnmanagedType.LPTStr)] string spec);
-
+		*/
 		public static int IndexOfRegex(this string str, string pattern) {
 			return IndexOfRegex(str, pattern, 0, RegexOptions.None);
 		}
@@ -313,7 +313,7 @@ namespace CatWalk {
 				}
 			}
 		}
-	
+	/*
 		public static void ParallelMergeSort<T>(this T[] array){
 			array.ParallelMergeSort(Comparer<T>.Default);
 		}
@@ -354,7 +354,7 @@ namespace CatWalk {
 				array.Merge(comparer, left, middle, right, temp);
 			}
 		}
-	
+	*/
 		public static void InsertSort<T>(this T[] array){
 			array.InsertSort(Comparer<T>.Default, 0, array.Length);
 		}

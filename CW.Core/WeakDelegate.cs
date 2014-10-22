@@ -15,7 +15,7 @@ namespace CatWalk {
 
 		public WeakDelegate(Delegate handler){
 			this._TargetReference = (handler.Target != null) ? new WeakReference(handler.Target) : null;
-			this._Method = handler.Method;
+			this._Method = handler.GetMethodInfo();
 			this._DelegateType = handler.GetType();
 		}
 
@@ -24,12 +24,12 @@ namespace CatWalk {
 				if(this._TargetReference != null){
 					var target = this._TargetReference.Target;
 					if(target != null) {
-						return global::System.Delegate.CreateDelegate(this._DelegateType, this._TargetReference.Target, this._Method);
+						return this._Method.CreateDelegate(this._DelegateType, this._TargetReference.Target);
 					} else {
 						return null;
 					}
 				}else{
-					return global::System.Delegate.CreateDelegate(this._DelegateType, this._Method);
+					return this._Method.CreateDelegate(this._DelegateType);
 				}
 			}
 		}
