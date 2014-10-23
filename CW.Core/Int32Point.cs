@@ -4,7 +4,7 @@
 using System;
 using System.Net;
 
-namespace CatWalk{
+namespace CW{
 	public struct Int32Point : IEquatable<Int32Point>{
 		public static readonly Int32Point Empty = new Int32Point();
 

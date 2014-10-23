@@ -3,7 +3,7 @@
 */
 using System;
 
-namespace CatWalk{
+namespace CW{
 	public struct Int32Vector : IEquatable<Int32Vector>{
 		public static readonly Int32Vector Empty = new Int32Vector();
 

@@ -3,7 +3,7 @@
 */
 using System;
 
-namespace CatWalk{
+namespace CW{
 	public struct Int32Size : IEquatable<Int32Size>{
 		public static readonly Int32Size Empty = new Int32Size();
 

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 
-namespace CatWalk{
+namespace CW{
 	public static partial class Seq{
 		#region Basic
 

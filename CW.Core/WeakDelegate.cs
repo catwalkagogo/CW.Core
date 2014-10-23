@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Reflection;
 
-namespace CatWalk {
+namespace CW {
 	public class WeakDelegate{
 		private WeakReference _TargetReference; // null when static method
 		private MethodInfo _Method;

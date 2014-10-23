@@ -3,7 +3,7 @@
 */
 using System;
 
-namespace CatWalk{
+namespace CW{
 	public abstract class DisposableObject : IDisposable{
 		private bool _Disposed = false;
 		protected bool IsDisposed{

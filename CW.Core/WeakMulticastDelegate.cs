@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CatWalk {
+namespace CW {
 	public class WeakMulticastDelegate{
 		LinkedList<WeakDelegate> _Handlers;
 		private LinkedList<WeakDelegate> Handlers{

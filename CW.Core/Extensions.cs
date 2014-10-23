@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Threading;
 
-namespace CatWalk {
+namespace CW {
 	public static partial class Ext{
 		#region Exception
 		public static void ThrowIfNull(this object obj) {

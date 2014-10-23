@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CatWalk{
+namespace CW{
 	public struct Range<T> : IEquatable<Range<T>>{
 		private T lowerBound;
 		private T upperBound;

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CatWalk {
+namespace CW {
 	public static class IDisposableExtensions {
 		public static void Dispose(this IEnumerable<IDisposable> source) {
 			source.ThrowIfNull("source");

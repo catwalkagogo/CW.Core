@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 
-namespace CatWalk {
+namespace CW {
 	public interface ILazy {
 		object Value{get;}
 		bool IsValueCreated{get;}

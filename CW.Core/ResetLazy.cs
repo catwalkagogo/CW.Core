@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Diagnostics;
 
-namespace CatWalk {
+namespace CW {
 	public class ResetLazy<T> : ILazy<T> {
 		private Func<T> valueFactory;
 		private LazyThreadSafetyMode mode;

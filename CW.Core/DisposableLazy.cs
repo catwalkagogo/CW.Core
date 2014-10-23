@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 
-namespace CatWalk {
+namespace CW {
 	public class DisposableLazy<T> : ResetLazy<T>, IDisposable
 		where T : IDisposable{
 		public DisposableLazy()

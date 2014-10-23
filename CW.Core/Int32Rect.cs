@@ -3,7 +3,7 @@
 */
 using System;
 
-namespace CatWalk{
+namespace CW{
 //#if SILVERLIGHT
 	public struct Int32Rect : IEquatable<Int32Rect>{
 		public int X{get; private set;}
